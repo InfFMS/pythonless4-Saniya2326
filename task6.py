@@ -9,3 +9,25 @@
 # Вывод:
 # 5 3
 
+
+def h(a,b):
+
+        for j in range (2, a+1):
+
+            if a%j==0:
+                if b%j == 0:
+                    a = a // j
+                    b = b // j
+                    for j in range(2, a + 1):
+
+                        if a % j == 0:
+                            if b % j == 0:
+                                a = a // j
+                                b = b // j
+
+        return(a,b)
+
+
+a = int(input())
+b = int(input())
+print(h(a,b))
